@@ -1,4 +1,14 @@
 fun main(args: Array<String>) {
+
+//    I'm in a lambda!
+//    Employee(firstName=Mike, lastName=Jones, startYear=2002)
+//    25
+//    I'm in a function!
+//    John
+//    Jane
+//    Mary
+//    Mike
+
     run { println("I'm in a lambda!") }
 
     val employees = listOf(Employee("John", "Smith", 2012),
@@ -16,7 +26,7 @@ fun main(args: Array<String>) {
 
     run(::topLevelFunction)
 
-    println(useParameter(employees))
+    useParameter(employees)
 }
 
 fun topLevelFunction() = println("I'm in a function!")
